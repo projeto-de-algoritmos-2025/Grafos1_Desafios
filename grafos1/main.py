@@ -6,13 +6,13 @@ from collections import deque
 TAM_CELULA = 40
 FPS = 60
 COR_PAREDE = (0, 0, 0)
-COR_CAMINHO = (255, 255, 255)
-COR_JOGADOR = (50, 100, 255)
+COR_CAMINHO = (223, 234, 252)
+COR_JOGADOR = (77, 63, 78)
 COR_OBJETIVO = (0, 200, 0)
 COR_TEXTO = (0, 0, 0)
 COR_BOTAO = (200, 50, 50)
 COR_TEXTO_BOTAO = (255, 255, 255)
-COR_CAMINHO_BFS = (255, 255, 100)  # Amarelo para o caminho BFS
+COR_CAMINHO_BFS = (36, 225, 89)  
 
 # Inicializar pygame
 pygame.init()
@@ -30,7 +30,7 @@ def inicializar_jogo():
 
     # Configurações da tela
     largura_tela = m.cols * TAM_CELULA
-    altura_tela = m.rows * TAM_CELULA + 80  # Espaço extra para o contador e botão
+    altura_tela = m.rows * TAM_CELULA + 55  # Espaço extra para o contador e botão
     tela = pygame.display.set_mode((largura_tela, altura_tela))
     pygame.display.set_caption("Labirinto - Chegue ao objetivo")
 
