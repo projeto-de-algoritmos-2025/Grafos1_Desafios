@@ -12,7 +12,7 @@
 Basicamente um game onde o jogador anda pelo labirinto (gerados automaticamente pela lib pyamaze) utilizando as setinhas do teclado, tendo como objetivo final o quadradinho verde no canto superior esquerdo da tela.
 
 ## Apresentação
-
+[Vídeo](https://youtu.be/lZAD5H36ICE)
 
 ## Screenshots
 <h3>Interface inicial</h3>
