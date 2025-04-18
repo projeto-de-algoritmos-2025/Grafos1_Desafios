@@ -126,10 +126,10 @@ def desenhar_controles():
     tela.blit(texto_botao, (largura_tela - 110, m.rows * TAM_CELULA + 15))
     
     # Botão para mostrar/ocultar caminho BFS
-    botao_bfs = pygame.Rect(largura_tela - 250, m.rows * TAM_CELULA + 10, 120, 30)
+    botao_bfs = pygame.Rect(largura_tela - 320, m.rows * TAM_CELULA + 10, 180, 30)
     pygame.draw.rect(tela, (50, 150, 50), botao_bfs, border_radius=5)
-    texto_bfs = fonte.render("Mostrar BFS", True, COR_TEXTO_BOTAO)
-    tela.blit(texto_bfs, (largura_tela - 240, m.rows * TAM_CELULA + 15))
+    texto_bfs = fonte.render("Melhor Caminho", True, COR_TEXTO_BOTAO)
+    tela.blit(texto_bfs, (largura_tela - 310, m.rows * TAM_CELULA + 15))
     
     return botao_reiniciar, botao_bfs
 
@@ -145,7 +145,7 @@ def mostrar_popup_vitoria():
     pygame.draw.rect(tela, (0, 150, 0), popup_rect, 3, border_radius=10)
     
     # Texto do popup
-    texto_vitoria = fonte_popup.render("Parabéns, jogador!! Você venceu o labirinto!", True, (0, 100, 0))
+    texto_vitoria = fonte_popup.render("Você venceu o labirinto!", True, (0, 100, 0))
     tela.blit(texto_vitoria, (popup_rect.centerx - texto_vitoria.get_width()//2, popup_rect.y + 30))
     
     texto_passos = fonte_vitoria.render(f"Seus passos: {passos}", True, COR_TEXTO)
